@@ -42,7 +42,7 @@ export default function Home() {
                 to="/servicios"
                 className="w-full min-[860px]:w-auto text-center border-2 border-white text-white px-8 py-4 font-black uppercase text-sm tracking-wide shadow-[6px_6px_0px_0px_rgba(255,255,255,0.1)] hover:shadow-[8px_8px_0px_0px_rgba(255,255,255,0.1)] transition-all hover:translate-x-[-2px] hover:translate-y-[-2px]"
               >
-                Ver Capacidades
+                Ver Servicios
               </Link>
             </div>
           </div>

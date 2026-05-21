@@ -11,8 +11,20 @@ export default function Contacto() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert('Mensaje enviado. Nos contactaremos a la brevedad.');
-    setFormData({ name: '', phone: '', address: '', message: '' });
+
+    const numero = "5493814567281"; 
+
+    const mensaje = `*HOLA SM CONTENEDORES, SOLICITO COTIZACIÓN:*
+
+    *Nombre:* ${formData.name}
+    *Teléfono:* ${formData.phone}
+    *Dirección de entrega:* ${formData.address}
+
+  💬 *Mensaje:*
+  ${formData.message}`;
+
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, "_blank");
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
