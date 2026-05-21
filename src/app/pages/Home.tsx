@@ -1,6 +1,6 @@
 import { Link } from 'react-router';
 import { DollarSign, Clock, Award } from 'lucide-react';
-import logo_png from '../assets/Contenedor-SM-Rojo_edited.png'
+import logo_png from '../assets/Contenedor-SM-Rojo.png'
 
 export default function Home() {
   return (

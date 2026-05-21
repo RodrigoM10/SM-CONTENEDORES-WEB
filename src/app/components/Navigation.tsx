@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router';
 import { Menu, X } from 'lucide-react';
-import logo_png from '../assets/Contenedor-SM-Rojo_edited.png'
 
 export default function Navigation() {
   const location = useLocation();
@@ -18,11 +17,6 @@ export default function Navigation() {
           
           {/* --- REQUISITO 2: LOGO COMO IMAGEN --- */}
           <Link to="/" onClick={closeMobile} className="flex items-center">
-            {/* <img 
-              src={logo_png}
-              alt="Logo SM Contenedores" 
-              className="h-10 min-[860px]:h-12 w-auto object-contain" 
-            /> */}
             <span className="font-black uppercase tracking-tighter">
                 <span className="text-[#DC2626] text-xl">SM</span>
                 <span className="text-black text-xl ml-1">CONTENEDORES</span>
@@ -48,16 +42,12 @@ export default function Navigation() {
               </Link>
             ))}
           </div>
-
-          {/* --- RESPONSIVE DESKTOP: CTA Brutalista (Oculto < 860px) --- */}
           <Link
             to="/contacto"
             className="hidden min-[860px]:block bg-[#DC2626] text-white px-6 py-3 font-black uppercase text-sm tracking-wide shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[-2px] hover:translate-y-[-2px]"
           >
             Pedir Contenedor
           </Link>
-
-          {/* --- RESPONSIVE MÓVIL: Botón Hamburgesa (Visible < 860px) --- */}
           <button
             className="min-[860px]:hidden flex items-center justify-center w-10 h-10 border-4 border-zinc-900 bg-white text-zinc-900 hover:bg-zinc-900 hover:text-white transition-colors"
             onClick={() => setMobileOpen((prev) => !prev)}
@@ -69,7 +59,6 @@ export default function Navigation() {
         </div>
       </div>
 
-      {/* --- RESPONSIVE MÓVIL: Menú Desplegable (Visible < 860px) --- */}
       {mobileOpen && (
         <div className="min-[860px]:hidden bg-white border-t-4 border-zinc-900 shadow-xl">
           <div className="flex flex-col">
