@@ -8,7 +8,7 @@ import logoGarsa from '../assets/clients/garsa.png'
 import logoTLTC from '../assets/clients/ltct.png'
 import logoOcasa from '../assets/clients/ocasa.png'
 import logoOrtegaCamiones from '../assets/clients/ortega-camiones.png'
-import logoSika from '../assets/clients/sika.webp'
+import logoAconquija from '../assets/clients/aconquija-color-header.png'
 import logoSiprosa from '../assets/clients/siprosa.png'
 import logoTarcos from '../assets/clients/tarcos.png'
 import logoTransnort from '../assets/clients/transnort.png'
@@ -24,7 +24,7 @@ export default function Nosotros() {
     { id: 6, name: 'TLTC', logo: logoTLTC },
     { id: 7, name: 'Empresa G', logo: logoOcasa },
     { id: 8, name: 'Ortega-Camiones', logo: logoOrtegaCamiones },
-    { id: 9, name: 'Sika', logo: logoSika },
+    { id: 9, name: 'Aconquija', logo: logoAconquija},
     { id: 10, name: 'Empresa J', logo: logoSiprosa },
     { id: 11, name: 'Tarcos', logo: logoTarcos },
     { id: 12, name: 'Transnort', logo: logoTransnort },
@@ -46,7 +46,6 @@ export default function Nosotros() {
 
       <section className="py-12 min-[860px]:py-20">
         <div className="max-w-7xl mx-auto px-4 min-[860px]:px-6">
-          <div className="grid grid-cols-1 min-[860px]:grid-cols-2 gap-10 min-[860px]:gap-16 items-center">
             <div>
               <h2 className="text-2xl min-[860px]:text-4xl mb-4 min-[860px]:mb-6">Nuestra Historia</h2>
               <div className="space-y-4 text-zinc-700 normal-case tracking-normal">
@@ -66,21 +65,6 @@ export default function Nosotros() {
                 </p>
               </div>
             </div>
-
-            <div
-              className="bg-zinc-200 h-[280px] min-[860px]:h-[500px] border-4 border-zinc-900 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] min-[860px]:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] flex items-center justify-center"
-              style={{
-                backgroundImage: `
-                  repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0,0,0,0.05) 10px, rgba(0,0,0,0.05) 20px)
-                `
-              }}
-            >
-              <div className="text-center">
-                <Building2 className="w-20 h-20 min-[860px]:w-32 min-[860px]:h-32 text-zinc-400 mx-auto mb-4" strokeWidth={1.5} />
-                <p className="font-black uppercase text-zinc-500 text-sm">Imagen de la Empresa</p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
